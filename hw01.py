@@ -14,7 +14,9 @@ class Task():
             if task['description'] == description:
                 task['status'] = "выполнено"
                 print(f"Задача {description} выполнена")
-
+                break
+        else:
+            print(f"Задача {description} не найдена")
 
     def show_tasks(self):
         print("Список задач:")
@@ -33,6 +35,7 @@ t.add_task("13.01.2023", "Выгулять собаку")
 t.show_tasks()
 
 t.complete_task("Помыть посуду")
+t.complete_task("Забить гвоздь")
 
 
 
