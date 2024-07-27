@@ -4,9 +4,8 @@
 # Выведите информацию о данных (.info()) и статистическое описание (.describe()).
 
 import pandas as pd
-import cv
 
-df = pd.read_csv('World-happiness-report-updated_2024.csv')
+df = pd.read_csv('complete_renewable_energy_dataset.csv')
 
 print(df.head())
 print(df.info())
