@@ -12,14 +12,15 @@
 #    - Если строка является палиндромом, вернуть `True`, иначе вернуть `False`.
 #
 
-
+import math
 def is_palindrome(s):
     # Шаг 1: Удаляем пробелы и приводим к нижнему регистру
     cleaned_str = ''.join(s.split()).lower()
 
     # Шаг 2: Сравниваем символы
     length = len(cleaned_str)
-    for i in range(length // 2):
+    #for i in range(length // 2):
+    for i in range(math.ceil(length / 2)):
         if cleaned_str[i] != cleaned_str[length - 1 - i]:
             return False  # Не палиндром
 
